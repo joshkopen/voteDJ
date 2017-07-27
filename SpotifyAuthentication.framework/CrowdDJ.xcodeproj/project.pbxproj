@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B8DEB041F172C9B0050BABC /* UserManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8DEB031F172C9B0050BABC /* UserManagement.swift */; };
+		0B9F7C0A1F1FEB0800DE3474 /* MusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F7C091F1FEB0800DE3474 /* MusicSearch.swift */; };
+		0BBDFC3C1F16866B000FE8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDFC3B1F16866B000FE8FA /* AppDelegate.swift */; };
+		0BBDFC3E1F16866B000FE8FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDFC3D1F16866B000FE8FA /* ViewController.swift */; };
+		0BBDFC411F16866B000FE8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDFC3F1F16866B000FE8FA /* Main.storyboard */; };
+		0BBDFC431F16866B000FE8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDFC421F16866B000FE8FA /* Assets.xcassets */; };
+		0BBDFC461F16866B000FE8FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDFC441F16866B000FE8FA /* LaunchScreen.storyboard */; };
+		0BBDFC511F16866B000FE8FA /* CrowdDJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDFC501F16866B000FE8FA /* CrowdDJTests.swift */; };
+		0BBDFC5C1F16866B000FE8FA /* CrowdDJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDFC5B1F16866B000FE8FA /* CrowdDJUITests.swift */; };
+		0BBDFC6A1F168752000FE8FA /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDFC691F168752000FE8FA /* MusicPlayer.swift */; };
+		0BBDFC791F168F1C000FE8FA /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDFC781F168F1C000FE8FA /* BridgeViewController.m */; };
+		0BBDFC7A1F16E5D1000FE8FA /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDFC741F168EA1000FE8FA /* SpotifyMetadata.framework */; };
+		0BBDFC7B1F16E5D6000FE8FA /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDFC731F168EA1000FE8FA /* SpotifyAudioPlayback.framework */; };
+		0BBDFC7C1F16E5D9000FE8FA /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDFC751F168EA1000FE8FA /* SpotifyAuthentication.framework */; };
+		0BBDFC7F1F172A70000FE8FA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDFC7D1F172A6E000FE8FA /* Realm.framework */; };
+		0BBDFC801F172A70000FE8FA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDFC7D1F172A6E000FE8FA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BBDFC811F172A70000FE8FA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDFC7E1F172A6F000FE8FA /* RealmSwift.framework */; };
+		0BBDFC821F172A70000FE8FA /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDFC7E1F172A6F000FE8FA /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D373473C11B18D27D086FDE /* Pods_CrowdDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B002E5F0D1C3F65B2EF518B /* Pods_CrowdDJ.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BBDFC4D1F16866B000FE8FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BBDFC301F16866B000FE8FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BBDFC371F16866B000FE8FA;
+			remoteInfo = CrowdDJ;
+		};
+		0BBDFC581F16866B000FE8FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BBDFC301F16866B000FE8FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BBDFC371F16866B000FE8FA;
+			remoteInfo = CrowdDJ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BBDFC831F172A70000FE8FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0BBDFC821F172A70000FE8FA /* RealmSwift.framework in Embed Frameworks */,
+				0BBDFC801F172A70000FE8FA /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B8DEB031F172C9B0050BABC /* UserManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManagement.swift; sourceTree = "<group>"; };
+		0B9F7C091F1FEB0800DE3474 /* MusicSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearch.swift; sourceTree = "<group>"; };
+		0BBDFC381F16866B000FE8FA /* CrowdDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBDFC3B1F16866B000FE8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0BBDFC3D1F16866B000FE8FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BBDFC401F16866B000FE8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BBDFC421F16866B000FE8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BBDFC451F16866B000FE8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0BBDFC471F16866B000FE8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BBDFC4C1F16866B000FE8FA /* CrowdDJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdDJTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBDFC501F16866B000FE8FA /* CrowdDJTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdDJTests.swift; sourceTree = "<group>"; };
+		0BBDFC521F16866B000FE8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BBDFC571F16866B000FE8FA /* CrowdDJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdDJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBDFC5B1F16866B000FE8FA /* CrowdDJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdDJUITests.swift; sourceTree = "<group>"; };
+		0BBDFC5D1F16866B000FE8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BBDFC691F168752000FE8FA /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		0BBDFC6C1F168AC9000FE8FA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0BBDFC6D1F168AF0000FE8FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0BBDFC731F168EA1000FE8FA /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		0BBDFC741F168EA1000FE8FA /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		0BBDFC751F168EA1000FE8FA /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		0BBDFC761F168F1B000FE8FA /* CrowdDJ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrowdDJ-Bridging-Header.h"; sourceTree = "<group>"; };
+		0BBDFC771F168F1C000FE8FA /* BridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgeViewController.h; path = CrowdDJ/BridgeViewController.h; sourceTree = "<group>"; };
+		0BBDFC781F168F1C000FE8FA /* BridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BridgeViewController.m; path = CrowdDJ/BridgeViewController.m; sourceTree = "<group>"; };
+		0BBDFC7D1F172A6E000FE8FA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Downloads/realm-swift-2.8.3/ios/swift-3.1/Realm.framework"; sourceTree = "<group>"; };
+		0BBDFC7E1F172A6F000FE8FA /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Downloads/realm-swift-2.8.3/ios/swift-3.1/RealmSwift.framework"; sourceTree = "<group>"; };
+		2B002E5F0D1C3F65B2EF518B /* Pods_CrowdDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrowdDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B8B2A331D395C54E2FC170 /* Pods-CrowdDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdDJ/Pods-CrowdDJ.release.xcconfig"; sourceTree = "<group>"; };
+		A29FB0006A899EB58EB23B8F /* Pods-CrowdDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdDJ/Pods-CrowdDJ.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BBDFC351F16866B000FE8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D373473C11B18D27D086FDE /* Pods_CrowdDJ.framework in Frameworks */,
+				0BBDFC7F1F172A70000FE8FA /* Realm.framework in Frameworks */,
+				0BBDFC811F172A70000FE8FA /* RealmSwift.framework in Frameworks */,
+				0BBDFC7A1F16E5D1000FE8FA /* SpotifyMetadata.framework in Frameworks */,
+				0BBDFC7B1F16E5D6000FE8FA /* SpotifyAudioPlayback.framework in Frameworks */,
+				0BBDFC7C1F16E5D9000FE8FA /* SpotifyAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBDFC491F16866B000FE8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBDFC541F16866B000FE8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBDFC2F1F16866B000FE8FA = {
+			isa = PBXGroup;
+			children = (
+				0BBDFC771F168F1C000FE8FA /* BridgeViewController.h */,
+				0BBDFC781F168F1C000FE8FA /* BridgeViewController.m */,
+				0BBDFC761F168F1B000FE8FA /* CrowdDJ-Bridging-Header.h */,
+				0BBDFC3A1F16866B000FE8FA /* CrowdDJ */,
+				0BBDFC4F1F16866B000FE8FA /* CrowdDJTests */,
+				0BBDFC5A1F16866B000FE8FA /* CrowdDJUITests */,
+				0BBDFC391F16866B000FE8FA /* Products */,
+				0BBDFC6B1F168AC8000FE8FA /* Frameworks */,
+				6CDACCAB328826683D5B143C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0BBDFC391F16866B000FE8FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDFC381F16866B000FE8FA /* CrowdDJ.app */,
+				0BBDFC4C1F16866B000FE8FA /* CrowdDJTests.xctest */,
+				0BBDFC571F16866B000FE8FA /* CrowdDJUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BBDFC3A1F16866B000FE8FA /* CrowdDJ */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDFC3B1F16866B000FE8FA /* AppDelegate.swift */,
+				0BBDFC691F168752000FE8FA /* MusicPlayer.swift */,
+				0BBDFC3D1F16866B000FE8FA /* ViewController.swift */,
+				0B9F7C091F1FEB0800DE3474 /* MusicSearch.swift */,
+				0B8DEB031F172C9B0050BABC /* UserManagement.swift */,
+				0BBDFC3F1F16866B000FE8FA /* Main.storyboard */,
+				0BBDFC421F16866B000FE8FA /* Assets.xcassets */,
+				0BBDFC441F16866B000FE8FA /* LaunchScreen.storyboard */,
+				0BBDFC471F16866B000FE8FA /* Info.plist */,
+			);
+			path = CrowdDJ;
+			sourceTree = "<group>";
+		};
+		0BBDFC4F1F16866B000FE8FA /* CrowdDJTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDFC501F16866B000FE8FA /* CrowdDJTests.swift */,
+				0BBDFC521F16866B000FE8FA /* Info.plist */,
+			);
+			path = CrowdDJTests;
+			sourceTree = "<group>";
+		};
+		0BBDFC5A1F16866B000FE8FA /* CrowdDJUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDFC5B1F16866B000FE8FA /* CrowdDJUITests.swift */,
+				0BBDFC5D1F16866B000FE8FA /* Info.plist */,
+			);
+			path = CrowdDJUITests;
+			sourceTree = "<group>";
+		};
+		0BBDFC6B1F168AC8000FE8FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDFC7E1F172A6F000FE8FA /* RealmSwift.framework */,
+				0BBDFC7D1F172A6E000FE8FA /* Realm.framework */,
+				0BBDFC731F168EA1000FE8FA /* SpotifyAudioPlayback.framework */,
+				0BBDFC751F168EA1000FE8FA /* SpotifyAuthentication.framework */,
+				0BBDFC741F168EA1000FE8FA /* SpotifyMetadata.framework */,
+				0BBDFC6D1F168AF0000FE8FA /* SystemConfiguration.framework */,
+				0BBDFC6C1F168AC9000FE8FA /* AVFoundation.framework */,
+				2B002E5F0D1C3F65B2EF518B /* Pods_CrowdDJ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CDACCAB328826683D5B143C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A29FB0006A899EB58EB23B8F /* Pods-CrowdDJ.debug.xcconfig */,
+				48B8B2A331D395C54E2FC170 /* Pods-CrowdDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BBDFC371F16866B000FE8FA /* CrowdDJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BBDFC601F16866B000FE8FA /* Build configuration list for PBXNativeTarget "CrowdDJ" */;
+			buildPhases = (
+				8355DA116CA1347CE929DE03 /* [CP] Check Pods Manifest.lock */,
+				0BBDFC341F16866B000FE8FA /* Sources */,
+				0BBDFC351F16866B000FE8FA /* Frameworks */,
+				0BBDFC361F16866B000FE8FA /* Resources */,
+				0BBDFC831F172A70000FE8FA /* Embed Frameworks */,
+				0B8DEB021F172BEA0050BABC /* ShellScript */,
+				B27C05EC6A261F273C3F01F8 /* [CP] Embed Pods Frameworks */,
+				E5316EAF4F8A149275DD8448 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrowdDJ;
+			productName = CrowdDJ;
+			productReference = 0BBDFC381F16866B000FE8FA /* CrowdDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BBDFC4B1F16866B000FE8FA /* CrowdDJTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BBDFC631F16866B000FE8FA /* Build configuration list for PBXNativeTarget "CrowdDJTests" */;
+			buildPhases = (
+				0BBDFC481F16866B000FE8FA /* Sources */,
+				0BBDFC491F16866B000FE8FA /* Frameworks */,
+				0BBDFC4A1F16866B000FE8FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BBDFC4E1F16866B000FE8FA /* PBXTargetDependency */,
+			);
+			name = CrowdDJTests;
+			productName = CrowdDJTests;
+			productReference = 0BBDFC4C1F16866B000FE8FA /* CrowdDJTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0BBDFC561F16866B000FE8FA /* CrowdDJUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BBDFC661F16866B000FE8FA /* Build configuration list for PBXNativeTarget "CrowdDJUITests" */;
+			buildPhases = (
+				0BBDFC531F16866B000FE8FA /* Sources */,
+				0BBDFC541F16866B000FE8FA /* Frameworks */,
+				0BBDFC551F16866B000FE8FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BBDFC591F16866B000FE8FA /* PBXTargetDependency */,
+			);
+			name = CrowdDJUITests;
+			productName = CrowdDJUITests;
+			productReference = 0BBDFC571F16866B000FE8FA /* CrowdDJUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BBDFC301F16866B000FE8FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Joshua Kopen";
+				TargetAttributes = {
+					0BBDFC371F16866B000FE8FA = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
+					};
+					0BBDFC4B1F16866B000FE8FA = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
+						TestTargetID = 0BBDFC371F16866B000FE8FA;
+					};
+					0BBDFC561F16866B000FE8FA = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 0BBDFC371F16866B000FE8FA;
+					};
+				};
+			};
+			buildConfigurationList = 0BBDFC331F16866B000FE8FA /* Build configuration list for PBXProject "CrowdDJ" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BBDFC2F1F16866B000FE8FA;
+			productRefGroup = 0BBDFC391F16866B000FE8FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BBDFC371F16866B000FE8FA /* CrowdDJ */,
+				0BBDFC4B1F16866B000FE8FA /* CrowdDJTests */,
+				0BBDFC561F16866B000FE8FA /* CrowdDJUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BBDFC361F16866B000FE8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBDFC461F16866B000FE8FA /* LaunchScreen.storyboard in Resources */,
+				0BBDFC431F16866B000FE8FA /* Assets.xcassets in Resources */,
+				0BBDFC411F16866B000FE8FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBDFC4A1F16866B000FE8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBDFC551F16866B000FE8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B8DEB021F172BEA0050BABC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+		8355DA116CA1347CE929DE03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B27C05EC6A261F273C3F01F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrowdDJ/Pods-CrowdDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5316EAF4F8A149275DD8448 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrowdDJ/Pods-CrowdDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BBDFC341F16866B000FE8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBDFC3E1F16866B000FE8FA /* ViewController.swift in Sources */,
+				0B9F7C0A1F1FEB0800DE3474 /* MusicSearch.swift in Sources */,
+				0BBDFC791F168F1C000FE8FA /* BridgeViewController.m in Sources */,
+				0BBDFC6A1F168752000FE8FA /* MusicPlayer.swift in Sources */,
+				0B8DEB041F172C9B0050BABC /* UserManagement.swift in Sources */,
+				0BBDFC3C1F16866B000FE8FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBDFC481F16866B000FE8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBDFC511F16866B000FE8FA /* CrowdDJTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBDFC531F16866B000FE8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBDFC5C1F16866B000FE8FA /* CrowdDJUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BBDFC4E1F16866B000FE8FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BBDFC371F16866B000FE8FA /* CrowdDJ */;
+			targetProxy = 0BBDFC4D1F16866B000FE8FA /* PBXContainerItemProxy */;
+		};
+		0BBDFC591F16866B000FE8FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BBDFC371F16866B000FE8FA /* CrowdDJ */;
+			targetProxy = 0BBDFC581F16866B000FE8FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BBDFC3F1F16866B000FE8FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBDFC401F16866B000FE8FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0BBDFC441F16866B000FE8FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBDFC451F16866B000FE8FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BBDFC5E1F16866B000FE8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0BBDFC5F1F16866B000FE8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BBDFC611F16866B000FE8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29FB0006A899EB58EB23B8F /* Pods-CrowdDJ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = XDLR82HZ2J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CrowdDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kopen.CrowdDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrowdDJ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BBDFC621F16866B000FE8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B8B2A331D395C54E2FC170 /* Pods-CrowdDJ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = XDLR82HZ2J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CrowdDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = kopen.CrowdDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrowdDJ-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0BBDFC641F16866B000FE8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4EU7KH7ZUS;
+				INFOPLIST_FILE = CrowdDJTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kopen.CrowdDJTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowdDJ.app/CrowdDJ";
+			};
+			name = Debug;
+		};
+		0BBDFC651F16866B000FE8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4EU7KH7ZUS;
+				INFOPLIST_FILE = CrowdDJTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kopen.CrowdDJTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowdDJ.app/CrowdDJ";
+			};
+			name = Release;
+		};
+		0BBDFC671F16866B000FE8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4EU7KH7ZUS;
+				INFOPLIST_FILE = CrowdDJUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kopen.CrowdDJUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrowdDJ;
+			};
+			name = Debug;
+		};
+		0BBDFC681F16866B000FE8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4EU7KH7ZUS;
+				INFOPLIST_FILE = CrowdDJUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kopen.CrowdDJUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrowdDJ;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BBDFC331F16866B000FE8FA /* Build configuration list for PBXProject "CrowdDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBDFC5E1F16866B000FE8FA /* Debug */,
+				0BBDFC5F1F16866B000FE8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BBDFC601F16866B000FE8FA /* Build configuration list for PBXNativeTarget "CrowdDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBDFC611F16866B000FE8FA /* Debug */,
+				0BBDFC621F16866B000FE8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BBDFC631F16866B000FE8FA /* Build configuration list for PBXNativeTarget "CrowdDJTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBDFC641F16866B000FE8FA /* Debug */,
+				0BBDFC651F16866B000FE8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BBDFC661F16866B000FE8FA /* Build configuration list for PBXNativeTarget "CrowdDJUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBDFC671F16866B000FE8FA /* Debug */,
+				0BBDFC681F16866B000FE8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BBDFC301F16866B000FE8FA /* Project object */;
+}
