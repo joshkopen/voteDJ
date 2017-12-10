@@ -31,7 +31,7 @@ class User: Object {
         super.init(value: value, schema: schema)
     }
     
-    func setUserValeus(name: String, email: String, username: String, password: String, userID: Int) {
+    func setUserValues(name: String, email: String, username: String, password: String, userID: Int) {
         self.name = name
         self.email = email
         self.username = username
